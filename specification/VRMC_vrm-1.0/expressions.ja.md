@@ -270,7 +270,7 @@ SetBlinkWeight(blinkWeight * factor);
 isBinaryが指定されている表情が他の表情にオーバーライドの影響を与える場合、出力値である二値化された値をもって他の表情に影響を与えなければいけません（MUST）。
 
 > これは、オーバーライドの影響を与える表情がキャラクター上に見た目として発現していないにも関わらず、他の表情がオーバーライドによって抑制されることを防ぐための仕様です。
-> 例えば、表情 `happy` の `isBinary` が `true` で、かつ `overrideBlink` に `block` もしくは `blend` が指定されている場合、 `happy` の値が 0.5 以上のとき、 `blink` は完全に抑制されます。逆に、 `happy` の値が 0.5 未満のとき、 `blink` は `happy` の値に関係なく評価されます。
+> 例えば、表情 `happy` の `isBinary` が `true` で、かつ `overrideBlink` に `block` もしくは `blend` が指定されている場合、 `happy` の値が 0.5 より大きいのとき、 `blink` は完全に抑制されます。逆に、 `happy` の値が 0.5 以下のとき、 `blink` は `happy` の値に関係なく評価されます。
 >
 > ![上記の例における `happy` の出力値の図解](./figures/override-isbinary-ja.png)
 

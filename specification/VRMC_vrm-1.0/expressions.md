@@ -270,7 +270,7 @@ SetBlinkWeight(blinkWeight * factor);
 When an expression with isBinary overrides other expressions, the binary output value MUST be used to affect other expressions.
 
 > This specification prevents other expressions from being suppressed when the overriding expression is not expressed visually on the character.
-> For example, if `isBinary` is set to `true` for the `happy` expression and `block` or `blend` is set for `overrideBlink`, when the value of `happy` is greater than or equals 0.5, `blink` is completely suppressed. Conversely, when the value of `happy` is less than 0.5, the input value of `blink` is evaluated regardless of the value of `happy`.
+> For example, if `isBinary` is set to `true` for the `happy` expression and `block` or `blend` is set for `overrideBlink`, when the value of `happy` is greater than 0.5, `blink` is completely suppressed. Conversely, when the value of `happy` is less than or equal to 0.5, the input value of `blink` is evaluated regardless of the value of `happy`.
 >
 > ![Figure explaining the output value of `happy` in the example above](./figures/override-isbinary-en.png)
 
